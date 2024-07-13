@@ -73,6 +73,7 @@ class AuthService {
 
     forgotPassword = async (email) => {
         return new Promise ((resolve, reject) => {
+            // email is object
             var rac = ""
             for (let key in email) {
                 rac += email[key]
